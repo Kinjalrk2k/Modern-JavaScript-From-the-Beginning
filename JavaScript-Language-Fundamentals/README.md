@@ -232,3 +232,11 @@ for(let x in user) {
     console.log(user[x])    //  gives the value
 }
 ```
+
+## Window methods
+- ```window.scrollY``` - scroll location
+- ```window.location``` - details on URLs, host, etc
+    - ```window.location.reload();``` - constantly reloads
+- ```window.history``` - browser history
+    ```window.history.go()``` - -ve goes back, +ve goes forward
+- ```window.navigator``` - details about the browser
