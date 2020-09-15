@@ -240,3 +240,9 @@ for(let x in user) {
 - ```window.history``` - browser history
     ```window.history.go()``` - -ve goes back, +ve goes forward
 - ```window.navigator``` - details about the browser
+
+## Block Scope
+- Scope of a block of code (inside {})
+- Though outside any {} are global scope
+- ```let``` and ```const``` follow normal scoping rules
+- In ```var```, the block scope overrides the global scope 
