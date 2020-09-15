@@ -1,4 +1,4 @@
-### JS console
+## JS console
 ```js
 console.table(object); // prints a table with key value pairs
 console.error("This is an error")   //  shows error in red
@@ -140,3 +140,95 @@ console.time(identifier)    //  shows time required  to run the scripts between 
 
     let val = numbers.find(under50);    //  just the first match
     ```
+
+## Object Literal
+- ```.val``` used to select values from object
+- ```['val']``` - same thing!
+
+## Date and Time
+- ```const today = new Date();```
+- ```Date``` is an ```object``` type
+- ```const birthday = new Date('Semptember 22 2000 11:35:00');```
+
+[MDN - Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+## Ternary Operator
+```js
+const val = 100
+console.log(val === 100 ? "Correct" : "Incorrect");
+```
+
+## Switches
+```js
+switch(color){
+    case 'red':
+        console.log("Color is red");
+        break;
+    case 'blue':
+        console.log("Color is blue");
+        break;
+    default:
+        console.log("Color is not red or blue");
+        break;
+}
+```
+
+## Function Expressions
+```js
+const square(x = 3) {   //  defualt value
+    return x * x;
+}
+
+square();   //  9
+```
+
+## Immediately Invokable Function Expressions (IIFEs)
+```js
+(function(name) {
+    console.log(name + " ran...");
+}("Brad"));
+```
+
+## Property Method
+```js
+const todo = {
+    add: function() {
+        console.log("Add Todo...");
+    }
+;}
+todo.delete = function() {
+    console.log("Delete Todo...");
+}
+
+todo.add()
+todo.delete()
+```
+
+## ```map()```
+```js
+const users = [
+    {id: 1, user: "John"},
+    {id: 2, user: "Sara"},
+    {id: 3, user: "Karen"}
+]
+
+const ids = users.map(function(user) {
+    return user.id;
+});
+
+console.log(ids);   //  [1, 2, 3]
+```
+
+## ```for-in``` loop
+```js
+const user = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 40
+}
+
+for(let x in user) {
+    console.log(x);     //  gives the keys
+    console.log(user[x])    //  gives the value
+}
+```
