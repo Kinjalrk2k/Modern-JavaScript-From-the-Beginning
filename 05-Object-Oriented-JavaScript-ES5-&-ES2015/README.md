@@ -82,3 +82,7 @@ name1 and name 2 cannot be compared as they are string and object repectively
     Customer.prototype.constructor = Customer;
     ```
     - Methods can be overridn in the base class, by simply re-declaring them!
+
+## ```Object.create```
+- ```Object.create``` takes in prototypes
+- Attributes can be hard coded directly using the object
