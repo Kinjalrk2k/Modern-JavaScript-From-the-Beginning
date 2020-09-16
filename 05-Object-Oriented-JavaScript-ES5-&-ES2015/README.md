@@ -67,3 +67,18 @@ name1 and name 2 cannot be compared as they are string and object repectively
     ```
     - The functions within the prototype are called in the exact same way (```ObjectName.functionName()```)
     - Prototypes are not an actual property
+
+## Prototypal Inheritance
+- ```.call(this, params...)``` method lets us call a function from the current function
+    - ```params...``` must be the parameters used to initialize the base class
+    - Almost like Java!
+- Attributes/Properties are inherited, but not prototypes
+    - To inherit the prototypes
+    ```js
+    SubClass.prototype = Object.create(BaseClass.prototype);
+    ```
+    - To use the subclass constructor
+    ```js
+    Customer.prototype.constructor = Customer;
+    ```
+    - Methods can be overridn in the base class, by simply re-declaring them!
