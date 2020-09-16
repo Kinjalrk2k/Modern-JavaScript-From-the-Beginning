@@ -81,8 +81,39 @@ name1 and name 2 cannot be compared as they are string and object repectively
     ```js
     Customer.prototype.constructor = Customer;
     ```
-    - Methods can be overridn in the base class, by simply re-declaring them!
+    - Methods can be overridng in the base class, by simply re-declaring them!
 
 ## ```Object.create```
 - ```Object.create``` takes in prototypes
 - Attributes can be hard coded directly using the object
+
+# ES6
+- Similar to OOP languages like Java, C#, PHP, etc
+- A class has attributes/properties, methods, constructors.
+- Syntax
+```js
+class ClassName {
+    constructor (/*takes the parameters to initialise*/) {
+        // set the attributes using this.attributeName
+    }
+
+    methodName () { //  no need for prototypes and all
+        /*
+            ...
+        */
+    }
+
+    static fooBar () {  //  static method
+        /*
+            ...
+        */
+    }
+}
+
+const object = new Classname(/* ... */);        //  creating an object
+object.methodName();    //  calling a method
+ClassName.fooBar();     //  calling static method
+```
+- Under the hood, ES6 classes uses the ES5 syntax only. Thats why classes are caled  due to convenient use
+- Static methods
+    - Can be used without instantiating(creating) an object
