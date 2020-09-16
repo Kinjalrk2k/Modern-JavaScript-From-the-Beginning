@@ -117,3 +117,14 @@ ClassName.fooBar();     //  calling static method
 - Under the hood, ES6 classes uses the ES5 syntax only. Thats why classes are caled  due to convenient use
 - Static methods
     - Can be used without instantiating(creating) an object
+
+## Subclass
+```js
+class Subclass extends BaseClass {
+    constructor((/* ... ... ... */) {
+        super(/* ... */);  //  calling the baseclass constructor
+        // set the attributes using this.attributeName
+    }
+}
+```
+- Told ya, It's Java!
