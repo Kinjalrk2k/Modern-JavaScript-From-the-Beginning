@@ -216,3 +216,15 @@ fetch(source)
     /* ... handle the error ... */
   })
 ```
+### Handling the error
+```js
+fetch(source)
+  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) {
+       throw new Error(res.error);
+    }
+    return res;
+  })
+  .catch(err => console.log(err));
+```
