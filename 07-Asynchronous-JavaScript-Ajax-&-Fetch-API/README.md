@@ -130,3 +130,41 @@ xhr.onreadystatechange = function () {
   }
 };
 ```
+
+# REST API
+- API in general
+  - Application Programming Interface
+  - Contract provied from one piece of software to another
+  - Structured `request` and `response`
+- REST
+  - REpresentational State Transfer
+  - Architecture style for designing networked applications
+  - Relies on Stateless, Client-Server protocol, almost always HTTP
+  - Treats server objects as resources that can be created or destroyed
+  - Can be used by virtually any programming language
+  - All APIs have their own rules and structure
+  - API is the messenger and REST uses HTTP to format that message
+
+## Different types of requests
+- `GET`: Retrive data from specific resource
+- `POST`: Submit data to be processed to a specific resource
+- `PUT`: Update a specific resource
+- `DELETE`: Delete a specific resource
+- `HEAD`: Same as `GET` but doesn't return a body
+- `OPTIONS`: Returns the supported HTTP methods
+- `PATCH`: Update partial resources
+
+| Request | URL(Endpoints) | Comments |
+|---------|----------------|----------|
+| `GET` | `https://someurl.com/api/users` | Get all users |
+| `GET` | `https://someurl.com/api/users/1` | Get single user |
+| `POST` | `https://someurl.com/api/users` | Add user |
+| `PUT` | `https://someurl.com/api/users/1` | Update user |
+| `DELETE` | `https://someurl.com/api/users/1` | Delete user |
+
+> Find a similar table in the [RESTful Blog](https://github.com/Kinjalrk2k/RESTful-Blog#restful-routes-table) repository!
+
+# Callback Function
+- A callback function is a function which is passed in another function as a parameter
+- We have synchronous and asynchronous callbacks
+- Functions like ```forEach()```(synchronous) ```setTimeout()```(asynchronous) use callbacks
