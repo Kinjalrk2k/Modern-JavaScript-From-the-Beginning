@@ -200,3 +200,19 @@ dothisFirst().then(doThisLater).catch(function(err) {
   /* Handle the error */
 })
 ```
+
+# Fetch API 
+- Doing Ajax stuffs with `Promise`s 
+- Syntax
+```js
+fetch(source)
+  .then(function(res)) {
+    return res.text();
+  }
+  .then(function(data) {
+    /* ... do something with the data ... */
+  })
+  .catch(function(err) {
+    /* ... handle the error ... */
+  })
+```
