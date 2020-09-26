@@ -168,3 +168,35 @@ xhr.onreadystatechange = function () {
 - A callback function is a function which is passed in another function as a parameter
 - We have synchronous and asynchronous callbacks
 - Functions like ```forEach()```(synchronous) ```setTimeout()```(asynchronous) use callbacks
+
+# ES6 Promises
+- Promises are alternatives of callbacks
+- They are called promises because while they handle asynchronous operations, they can promise to do something when the operation is finished
+- We can handle a promise response with `.then`
+- A function must return a `Promise` object for `.then` and `.catch` to work
+- Syntax
+```js
+function doThisFirst() {
+  return new Promise(function(resolve, reject) {
+    /*
+    ... do stuffs here ...
+    */
+
+    if(!error) {
+      resolve();  // ready for the .then function
+    } else {
+      reject("Error!"); //  goes in the .catch (throws an error)
+    }
+  })
+}
+
+function doThisLater() {
+  /*
+  ... do stuffs here ...
+  */
+}
+
+dothisFirst().then(doThisLater).catch(function(err) {
+  /* Handle the error */
+})
+```
