@@ -228,3 +228,18 @@ fetch(source)
   })
   .catch(err => console.log(err));
 ```
+
+# Arrow functions or "Fat Arrow" Functions
+- Saves lines of codes
+- Lexical `this`
+- Syntax
+```js
+const foo = (params) => {
+  /* ... bar ...*/
+}
+```
+- When the function body is single lined, we don't even need the curly braces!
+- One lined `return` statement, doesn't even need the `return` statement
+- Object Literals cannot be direclty retured in one liner functions, as it see the object within the `{}` as the function body and returns `undefined`. However, wrapping the object with `()` solves the problem
+- If there's single param, then we don't need to wrap that in `()`
+- Arrow functions can be used as callbacks
