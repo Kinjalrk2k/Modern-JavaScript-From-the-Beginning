@@ -1,0 +1,4 @@
+[submodule "07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-callbacks"]
+	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-callbacks
+	url = https://github.com/Kinjalrk2k/easyHTTP
+	branch = callbacks
