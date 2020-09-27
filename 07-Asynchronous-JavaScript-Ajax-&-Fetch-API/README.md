@@ -239,7 +239,14 @@ const foo = (params) => {
 }
 ```
 - When the function body is single lined, we don't even need the curly braces!
-- One lined `return` statement, doesn't even need the `return` statement
+- One lined `return` statement, doesn't even need the `return` statement. Use `()`. This is an implicit return
 - Object Literals cannot be direclty retured in one liner functions, as it see the object within the `{}` as the function body and returns `undefined`. However, wrapping the object with `()` solves the problem
 - If there's single param, then we don't need to wrap that in `()`
 - Arrow functions can be used as callbacks
+
+# Async/Await
+- Part of ES7 or ES2016 standard
+- Fully implemented in Google Chrome
+- In a production project, this might need to be complied down to ES5
+- `async` function returns a `Promise`
+- `asyn` can be done without `await`
