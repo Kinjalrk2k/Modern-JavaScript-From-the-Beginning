@@ -6,3 +6,7 @@
 	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-promises
 	url = https://github.com/Kinjalrk2k/easyHTTP
 	branch = promises
+[submodule "07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-async-await"]
+	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-async-await
+	url = https://github.com/Kinjalrk2k/easyHTTP
+	branch = async-await
