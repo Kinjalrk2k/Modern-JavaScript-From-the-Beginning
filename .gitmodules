@@ -2,3 +2,7 @@
 	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-callbacks
 	url = https://github.com/Kinjalrk2k/easyHTTP
 	branch = callbacks
+[submodule "07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-promises"]
+	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-promises
+	url = https://github.com/Kinjalrk2k/easyHTTP
+	branch = promises
