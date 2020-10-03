@@ -13,3 +13,6 @@
 [submodule "08-API-Projects/GitHub-Finder"]
 	path = 08-API-Projects/GitHub-Finder
 	url = https://github.com/Kinjalrk2k/GitHub-Finder
+[submodule "08-API-Projects/WeatherApp"]
+	path = 08-API-Projects/WeatherApp
+	url = https://github.com/Kinjalrk2k/WeatherApp
