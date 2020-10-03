@@ -10,3 +10,6 @@
 	path = 07-Asynchronous-JavaScript-Ajax-&-Fetch-API/easyHTTP-using-async-await
 	url = https://github.com/Kinjalrk2k/easyHTTP
 	branch = async-await
+[submodule "08-API-Projects/GitHub-Finder"]
+	path = 08-API-Projects/GitHub-Finder
+	url = https://github.com/Kinjalrk2k/GitHub-Finder
