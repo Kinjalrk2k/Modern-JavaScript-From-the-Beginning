@@ -35,45 +35,47 @@
 - Regex is enclosed within two forward slashes
     - ```/ regex here... /```
     - ```let re = /hello/```
-- Functions used to evaluate regex:
-    - `re.source`: prints the regex string without the forward slashes
-    - `exec()`: Return a result in an array if there is a match or else will return `null`
-        - The array contains the `index` from which the the matching string starts
-        - ```js
-            let re = /hello/;
-            const result = re.exec("hello world");
 
-            result // the whole array
-            result[0]   // the search string
-            result.index    //  starting index of the matching string part
-            result.input    //  the input string (hello world)
-            ```
-    - `test()`: Returns `true` or `false` according to pattern match
-        ```js
-        const result = re.test("hello");
-        result  // true
+## Functions:
+- `re.source`: prints the regex string without the forward slashes
+- `exec()`: Return a result in an array if there is a match or else will return `null`
+    - The array contains the `index` from which the the matching string starts
+    - ```js
+        let re = /hello/;
+        const result = re.exec("hello world");
+
+        result // the whole array
+        result[0]   // the search string
+        result.index    //  starting index of the matching string part
+        result.input    //  the input string (hello world)
         ```
-    - `match()` - Resturns result array or `null`
-        - Very much similar to `exec()
-        - ```js
-            let re = /hello/;
-            const str = "hello there!";
-            const result = str.match(re);
+- `test()`: Returns `true` or `false` according to pattern match
+    ```js
+    const result = re.test("hello");
+    result  // true
+    ```
+- `match()` - Resturns result array or `null`
+    - Very much similar to `exec()
+    - ```js
+        let re = /hello/;
+        const str = "hello there!";
+        const result = str.match(re);
 
-            result // returns same things as of exec()
-            ```
-    - `search()` - Returns the index of the first match, if not found, it returns -1
-        - Works kinda like `indexof()`
-    - `replace()` - Return a new string with some or all matches of the pattern
-        - ```js
-            let re = /hello/;
-            const str = "hello there!";
-            const newStr = str.replace(re, "hi");
+        result // returns same things as of exec()
+        ```
+- `search()` - Returns the index of the first match, if not found, it returns -1
+    - Works kinda like `indexof()`
+- `replace()` - Return a new string with some or all matches of the pattern
+    - ```js
+        let re = /hello/;
+        const str = "hello there!";
+        const newStr = str.replace(re, "hi");
 
-            newStr  // hi there!
-            ```
+        newStr  // hi there!
+        ```
 
-- Flags in Regex: Flags are written after the regex (after ending `/`)
+## Flags
+- Flags are written after the regex (after ending `/`)
     - `i` - ignore case (case insensitive) → `/hello/i`
     - `g` - global search: search for all instances, not just the first one → `/hello/g`
 
@@ -91,3 +93,24 @@
     - Place `?` after the optional character
     - `/gre?a?y/` - can match "gry", "gray" and "grey"
 - `\`: Used for escape character
+
+## Character Sets
+- `[]` are character sets
+- `[ae]` means either 'a' or 'e' (one character)
+- Can be combined with the metacharacters
+    `\^[ae]\` means starts with 'a' or 'e'
+- `^`: Negation
+    - `[^GF]` means can match anything except "G" and "F"
+- Range
+    - `[A-Z]` range: anything between A-Z
+    - `[A-Za-z]` multiple ranges
+
+## Quantifiers
+- `{}` are quantifiers
+- Works with the character after
+    `/l{2}/` - matches 2 'l's, "ll"
+    `/l{2,4}/` - matches 2-4  'l's, "ll", "lll" and "llll"
+    `/l{2,}/` - matches at least 2 times
+
+## Parenthesis
+- `()` used for groupings

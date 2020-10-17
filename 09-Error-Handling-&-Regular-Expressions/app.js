@@ -13,6 +13,11 @@ re = /h*llo/  // matches character zero or more times
 re = /gre?a?y/  //  optional character
 re = /gre?a?y\?/  // escape characters
 
+// Brackets [] - character sets
+re = /gr[ae]y/  //  must be a or e
+re = /[^GF]ray/ //  can match anything except G or F
+
+
 // string to match
 const str = "hello World";
 
