@@ -1,0 +1,2 @@
+let re;
+re = /hello/
