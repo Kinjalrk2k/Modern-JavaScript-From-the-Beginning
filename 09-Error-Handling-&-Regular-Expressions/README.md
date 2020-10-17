@@ -76,3 +76,18 @@
 - Flags in Regex: Flags are written after the regex (after ending `/`)
     - `i` - ignore case (case insensitive) → `/hello/i`
     - `g` - global search: search for all instances, not just the first one → `/hello/g`
+
+## Meta-characters
+- Literal characters: The characters that match exactly
+- `^`: must start with
+    - `/^h/` - must start with 'h'
+- `$`: must end with
+    - `/d$/` - must end with 'd'
+    - `/^d$/` - must begin and end with 'd'
+- `.`: matches any one character in place of `.`
+    - `/a.c/` - can match "abc", "a2c", ... etc
+- `*`: matches character zero or more times
+- `?`: Optinal character
+    - Place `?` after the optional character
+    - `/gre?a?y/` - can match "gry", "gray" and "grey"
+- `\`: Used for escape character
