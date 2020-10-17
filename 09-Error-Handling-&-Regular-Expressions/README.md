@@ -89,6 +89,7 @@
 - `.`: matches any one character in place of `.`
     - `/a.c/` - can match "abc", "a2c", ... etc
 - `*`: matches character zero or more times
+- `+`: matches character one or more times
 - `?`: Optinal character
     - Place `?` after the optional character
     - `/gre?a?y/` - can match "gry", "gray" and "grey"
@@ -114,3 +115,17 @@
 
 ## Parenthesis
 - `()` used for groupings
+
+## Shorthand character classes
+- `\w` - Alphanumeric character: Any number, alphabet or underscore(_)
+- `\W` - Non-Alphanumeric characters
+- `\d` - Digit
+- `\D` - Non-digit
+- `\s` - Whitespace: spaces, tabs
+- `\S` - Non-whitespace
+- `\b` - Word bourndary: checks the whole word
+    - `/Hell\b/` will match "Hell" and not "Hello"
+
+## Assertions
+- `/x(?=y)` - Match "x" only if it is followed by "y"
+    - `/x(?!y)` - Match "x" only if it is NOT followed by "y"
