@@ -43,3 +43,66 @@
 
         const { name, age, city } = person;
         ```
+
+# Maps
+- New object structures
+- Introduced in ECMAScript 6
+- Holds key-value pairs
+- Any value: whether it's an object reference type or primitive type can be used as key or value
+- We can use an object as a key
+- Map Syntax
+    - `const map1 = new Map();`
+- Setting and Getting values
+    - ```js
+        // set keys
+        const key1 = "some string",
+        key2 = {},
+        key3 = function () {};
+
+        // set values
+        map1.set("key1", "Value of key1");
+        map1.set("key2", "Value of key2");
+        map1.set("key3", "Value of key3");
+
+        // get values by key
+        console.log(map1.get(key1)); // Value of key1
+        console.log(map1.get(key2)); // Value of key1
+        console.log(map1.get(key3)); // Value of key1
+        ```
+- Size
+    - `console.log(map1.size); //  3`
+- Iterations
+    - ```js
+        for (let [key, value] of map1) {
+            console.log(`${key} = ${value}`);
+        }
+        ```
+    - Only keys
+        - ```js
+            for (let key of map1.keys()) {
+                console.log(key);
+            }
+            ```
+    - Only values
+        - ```js
+            for (let value of map1.values()) {
+                console.log(value);
+            }
+            ```
+    - `forEach`
+        - ```js
+            map1.forEach(function (value, key) {
+                console.log(`${key} = ${value}`);
+            });
+            ```
+- Convert to arrays
+    - ```js
+        const keyValArr = Array.from(map1)
+        console.log(keyValArr)
+
+        const valArr = Array.from(map1.values())
+        console.log(valArr)
+
+        const keyArr = Array.from(map1.key())
+        console.log(keyArr)
+        ```

@@ -1,23 +1,50 @@
-// Destructuring Assignment
+const map1 = new Map();
 
-let a, b;
-[a, b] = [100, 200];
+// set keys
+const key1 = "some string",
+  key2 = {},
+  key3 = function () {};
 
-[a, b, ...rest] = [100, 200, 300, 400, 500];
+// set values
+map1.set("key1", "Value of key1");
+map1.set("key2", "Value of key2");
+map1.set("key3", "Value of key3");
 
-({ a, b } = { a: 100, b: 200, c: 300, d: 400, e: 500 });
-({ a, b, ...rest } = { a: 100, b: 200, c: 300, d: 400, e: 500 });
+// get values by key
+console.log(map1.get(key1)); // Value of key1
+console.log(map1.get(key2)); // Value of key1
+console.log(map1.get(key3)); // Value of key1
 
-console.log(a);
+// count values
+console.log(map1.size); //  3
 
-const people = ["John", "Beth", "Mike"];
-const [person1, person2, person3] = people;
+// iteration in maps
+// loop using for...of
+for (let [key, value] of map1) {
+  console.log(`${key} = ${value}`);
+}
 
-const person = {
-  name: "John Doe",
-  age: 32,
-  city: "Miami",
-  gender: "Male",
-};
+// iterate key only
+for (let key of map1.keys()) {
+  console.log(key);
+}
 
-const { name, age, city } = person;
+// iterate values only
+for (let value of map1.values()) {
+  console.log(value);
+}
+
+// forEach
+map1.forEach(function (value, key) {
+  console.log(`${key} = ${value}`);
+});
+
+// convert to arrays
+const keyValArr = Array.from(map1)
+console.log(keyValArr)
+
+const valArr = Array.from(map1.values())
+console.log(valArr)
+
+const keyArr = Array.from(map1.key())
+console.log(keyArr)
