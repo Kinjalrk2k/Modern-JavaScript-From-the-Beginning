@@ -18,3 +18,28 @@
 - No two Symbols can be same even if we put the same identifier
 - Symbols are not enumerable in `for...in`
 - Symbols are ignored when using `JSON.stringify`
+
+# DeStructuring
+- Easy way to assign and extract variables fromarrays and objects
+- `[a, b] = [100, 200]`
+- Rest pattern
+    - `...` is called the spread operator
+    - `[a, b, ...rest] = [100, 200, 300, 400, 500];` → `rest` will have value `[300, 400, 500]` (an array)
+- Can be used with Objects too
+    - `({ a, b } = { a: 100, b: 200, c: 300, d: 400, e: 500 });`
+    - `({ a, b, ...rest} = { a: 100, b: 200, c: 300, d: 400, e: 500 });`
+- Examples:
+    - ```js
+        const people = ["John", "Beth", "Mike"];
+        const [person1, person2, person3] = people;
+        ```
+    - ```js
+        const person = {
+        name: "John Doe",
+        age: 32,
+        city: "Miami",
+        gender: "Male",
+        };
+
+        const { name, age, city } = person;
+        ```
