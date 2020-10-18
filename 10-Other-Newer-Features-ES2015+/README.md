@@ -106,3 +106,35 @@
         const keyArr = Array.from(map1.key())
         console.log(keyArr)
         ```
+
+# Sets
+- List of unique values → Primitive or reference
+- Syntax
+    - `const set1 = new Set();`
+    - `const set2 = new Set([1, true, "A String"]);`
+- Add to set 
+    - `set1.add(100)`
+- Size
+    - `set1.size`
+- Check for values
+    - `set1.has(100)`
+    - returns `boolean`
+    - Objects cannot be found this this - as each object  is unique and has their own reference value
+- Delete
+    - `set1.delete(100)`
+- Iterate
+    - ```js
+        for(let item of set1) {
+            console.log(item);
+        }
+        ```
+    - Sets are not key-value pairs. So, `set1`, `set1.values()`, `set1.keys()`, `set1.entries()` are the same thing
+    - ```js
+        set1.forEach((value) => {
+            console.log(value);
+        })
+        ```
+- Convert to arrays
+    - ```js
+        const setArr = Array.from(set1);
+        ```
