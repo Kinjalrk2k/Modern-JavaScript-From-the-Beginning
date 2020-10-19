@@ -42,3 +42,10 @@
 - We use singleton pattern when we want only one object created at a time
 - Singleton gives a global point of access, rather than embracing encapsulation 
 - [app.js](Sandbox/singleton.js)
+
+# Factory pattern
+- Also known ass factory method
+- Way of creating an interface for creating objects 
+- We can let subclasses to define which classes to instantiate
+- Factory methods are often used in applications to manage and maintain and manipulate collections of objects that are different but have some same characteristics
+- [app.js](Sandbox/factory.js)
