@@ -27,7 +27,18 @@
     };
     })();
     ```
+- [app.js](Sandbox/module_pattern.js)
 
 # Revealing Module pattern
 - Instead of returning the public functions, we map a object literal to private functions, we want to reveal → That's why it's called "Revealing" module
 - Private variables are sometimes prefixed with underscore(_)
+- [app.js](Sandbox/module_pattern.js)
+
+# Singleton pattern
+- Actually a manifestation of the module pattern
+- Singleton object is an immediate anonymous function and it can only return one instance of an object at a time
+- Repeated calls to the constructor always returns the same instance
+- Maintains a private reference which nothing from the outside can access
+- We use singleton pattern when we want only one object created at a time
+- Singleton gives a global point of access, rather than embracing encapsulation 
+- [app.js](Sandbox/singleton.js)
