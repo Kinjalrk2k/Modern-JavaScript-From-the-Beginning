@@ -49,3 +49,10 @@
 - We can let subclasses to define which classes to instantiate
 - Factory methods are often used in applications to manage and maintain and manipulate collections of objects that are different but have some same characteristics
 - [app.js](Sandbox/factory.js)
+
+# Observer Pattern
+- Subscribe or Unsubscribe to certain events or functionalities
+- Subscribtion model
+- Can be used to notify the DOM when certain elements are updated
+- AngularJS relies heavily on this pattern: event management within a scope
+- [app.js](Sandbox/observer.js)
