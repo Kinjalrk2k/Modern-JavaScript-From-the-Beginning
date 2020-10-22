@@ -51,8 +51,15 @@
 - [app.js](Sandbox/factory.js)
 
 # Observer Pattern
+- Behavioural Pattern
 - Subscribe or Unsubscribe to certain events or functionalities
 - Subscribtion model
 - Can be used to notify the DOM when certain elements are updated
 - AngularJS relies heavily on this pattern: event management within a scope
 - [app.js](Sandbox/observer.js)
+
+# Mediator Pattern
+- Behavioural Pattern
+- Basically a mediator: An interface for communicating with *"colleagues"* (mediated objects)
+- Example: Chat Room
+- [app.js](Sandbox/mediator.js)
