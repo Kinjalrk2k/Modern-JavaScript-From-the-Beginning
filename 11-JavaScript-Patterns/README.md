@@ -63,3 +63,8 @@
 - Basically a mediator: An interface for communicating with *"colleagues"* (mediated objects)
 - Example: Chat Room
 - [app.js](Sandbox/mediator.js)
+
+# State Pattern
+- Behavioural Pattern
+- Sortof how State Managers like Redux works
+- We've a state which we can change throughout our script
