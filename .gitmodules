@@ -19,3 +19,6 @@
 [submodule "12-Tracalorie-Project-Using-The-Module-Pattern"]
 	path = 12-Tracalorie-Project-Using-The-Module-Pattern
 	url = https://github.com/Kinjalrk2k/Tracalorie
+[submodule "13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/babel-webpack-starter"]
+	path = 13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/babel-webpack-starter
+	url = https://github.com/Kinjalrk2k/babel-webpack-starter
