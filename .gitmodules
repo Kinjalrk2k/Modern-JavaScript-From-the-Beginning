@@ -22,3 +22,6 @@
 [submodule "13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/babel-webpack-starter"]
 	path = 13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/babel-webpack-starter
 	url = https://github.com/Kinjalrk2k/babel-webpack-starter
+[submodule "13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/MicroPosts"]
+	path = 13-Microposts-Project-CRUD-Front-End-Webpack-&-Babel/MicroPosts
+	url = https://github.com/Kinjalrk2k/MicroPosts
