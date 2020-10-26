@@ -16,3 +16,6 @@
 [submodule "08-API-Projects/WeatherApp"]
 	path = 08-API-Projects/WeatherApp
 	url = https://github.com/Kinjalrk2k/WeatherApp
+[submodule "12-Tracalorie-Project-Using-The-Module-Pattern"]
+	path = 12-Tracalorie-Project-Using-The-Module-Pattern
+	url = https://github.com/Kinjalrk2k/Tracalorie
